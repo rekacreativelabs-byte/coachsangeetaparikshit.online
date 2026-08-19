@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sangeeta Kumari | Health &amp; Wellness Coach</title>
+<meta name="description" content="Sangeeta Kumari — Health &amp; Wellness Coach. Sustainable weight loss, healthy weight gain and lifestyle guidance built around home food, real nutrition and simple habits. No starving, no giving up favourite foods, no heavy workouts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+
+  :root{
+    --forest:#132420;
+    --forest-2:#1D3931;
+    --forest-3:#26493E;
+    --gold:#E3A83B;
+    --gold-soft:#F3D9A4;
+    --clay:#E0654B;
+    --paper:#FBF3E6;
+    --paper-2:#F3E7D3;
+    --ink:#1C231F;
+    --ink-soft:#5B665D;
+    --line:#E2D6BE;
+    --font-display:'Fraunces', Georgia, serif;
+    --font-body:'Noto Sans Devanagari', 'Segoe UI', sans-serif;
+    --radius:20px;
+    --radius-sm:10px;
+    --shadow:0 10px 40px rgba(19,36,32,0.12);
+    --shadow-lg:0 24px 70px rgba(19,36,32,0.22);
+  }
+
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--font-body);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.7;
+    overflow-x:hidden;
+    font-size:16px;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .container{max-width:1180px;margin:0 auto;padding:0 2rem;}
+  section{padding:6rem 0;}
+  @media(max-width:720px){section{padding:4rem 0;}}
+
+  ::selection{background:var(--gold-soft);color:var(--forest);}
+  :focus-visible{outline:2px solid var(--clay);outline-offset:3px;}
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important;}
+  }
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5rem;
+    font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--gold);
+  }
+  .eyebrow::before{content:'';width:22px;height:1.5px;background:var(--gold);display:inline-block;}
+
+  /* ===== NAV ===== */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:200;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:0 2rem;height:76px;
+    background:rgba(19,36,32,0.0);
+    transition:background .35s ease, box-shadow .35s ease, backdrop-filter .35s ease;
+  }
+  nav.scrolled{
+    background:rgba(19,36,32,0.92);
+    backdrop-filter:blur(14px);
+    box-shadow:0 6px 30px rgba(0,0,0,.15);
+  }
+  .nav-logo{
+    font-family:var(--font-display);
+    font-size:1.3rem;font-weight:600;color:#fff;text-decoration:none;letter-spacing:-.01em;
+    display:flex;flex-direction:column;line-height:1.05;
+  }
+  .nav-logo b{font-weight:700;}
+  .nav-logo small{font-family:var(--font-body);font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-soft);font-weight:600;}
+  .nav-links{display:flex;gap:2.1rem;list-style:none;align-items:center;}
+  .nav-links a{text-decoration:none;font-size:.88rem;font-weight:500;color:rgba(255,255,255,.82);transition:color .2s;}
+  .nav-links a:hover{color:var(--gold-soft);}
+  .nav-cta{
+    background:var(--clay);color:#fff !important;padding:10px 22px;border-radius:50px;
+    font-weight:600;font-size:.85rem;transition:background .2s, transform .15s;white-space:nowrap;
+  }
+  .nav-cta:hover{background:#c8543d;transform:translateY(-1px);}
+  .nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;border:none;background:none;padding:6px;z-index:210;}
+  .nav-hamburger span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s;}
+  .mobile-menu{
+    display:none;position:fixed;inset:0;background:var(--forest);z-index:190;
+    flex-direction:column;justify-content:center;gap:1.4rem;padding:2rem;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{text-decoration:none;color:#fff;font-family:var(--font-display);font-size:1.6rem;font-weight:600;}
+  .mobile-menu .nav-cta{align-self:flex-start;margin-top:1rem;}
+  @media(max-width:900px){
+    .nav-links{display:none;}
+    .nav-cta.desktop-only{display:none;}
+    .nav-hamburger{display:flex;}
+  }
+
+  /* ===== HERO ===== */
+  #hero{
+    background:radial-gradient(120% 90% at 15% -10%, #244A3D 0%, var(--forest) 55%), var(--forest);
+    color:#fff;
+    padding:9.5rem 0 5rem;
+    position:relative;
+    overflow:hidden;
+  }
+  #hero::after{
+    content:'';position:absolute;inset:0;
+    background-image:radial-gradient(circle, rgba(227,168,59,.18) 1px, transparent 1px);
+    background-size:26px 26px;
+    opacity:.35;
+    mask-image:linear-gradient(180deg, transparent, #000 25%, #000 70%, transparent);
+    pointer-events:none;
+  }
+  .hero-grid{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:3.5rem;align-items:center;position:relative;z-index:1;
+  }
+  @media(max-width:960px){.hero-grid{grid-template-columns:1fr;}}
+
+  .hero-title{
+    font-family:var(--font-display);
+    font-size:clamp(2.2rem, 4.6vw, 3.5rem);
+    font-weight:600;
+    line-height:1.16;
+    letter-spacing:-.02em;
+    margin:1.1rem 0 1rem;
+  }
+  .hero-title em{font-style:italic;color:var(--gold-soft);}
+  .hero-title-hi{
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:clamp(1.15rem,2.2vw,1.5rem);
+    color:var(--gold-soft);
+    margin-bottom:1.3rem;
+    display:block;
+  }
+  .hero-sub{font-size:1.05rem;color:rgba(255,255,255,.78);max-width:46ch;margin-bottom:2.1rem;}
+  .hero-actions{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:2.6rem;}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;
+    padding:14px 26px;border-radius:50px;font-weight:600;font-size:.92rem;
+    text-decoration:none;border:1px solid transparent;transition:transform .18s ease, background .2s, border-color .2s;
+    cursor:pointer;
+  }
+  .btn-primary{background:var(--clay);color:#fff;}
+  .btn-primary:hover{transform:translateY(-2px);background:#c8543d;}
+  .btn-ghost{border-color:rgba(255,255,255,.35);color:#fff;}
+  .btn-ghost:hover{border-color:#fff;transform:translateY(-2px);}
+  .hero-trust{display:flex;gap:1.8rem;flex-wrap:wrap;}
+  .hero-trust div{font-size:.78rem;color:rgba(255,255,255,.6);letter-spacing:.02em;}
+  .hero-trust b{display:block;font-family:var(--font-display);font-size:1.3rem;color:#fff;font-weight:600;}
+
+  /* signature: transformation ring */
+  .ring-wrap{position:relative;display:flex;align-items:center;justify-content:center;padding:1rem;}
+  .ring-svg{width:100%;max-width:400px;height:auto;}
+  .ring-track{fill:none;stroke:rgba(255,255,255,.09);stroke-width:10;}
+  .ring-progress{
+    fill:none;stroke:url(#ringGradient);stroke-width:10;stroke-linecap:round;
+    stroke-dasharray:754;stroke-dashoffset:754;
+    animation:ringfill 1.8s 0.3s cubic-bezier(.2,.9,.25,1) forwards;
+  }
+  @keyframes ringfill{to{stroke-dashoffset:302;}}
+  .ring-center{
+    position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    text-align:center;
+  }
+  .ring-center .num{font-family:var(--font-display);font-size:3.4rem;font-weight:700;color:#fff;line-height:1;}
+  .ring-center .lbl{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-soft);margin-top:.4rem;}
+  .ring-badge{
+    position:absolute;background:var(--paper);color:var(--forest);
+    padding:10px 16px;border-radius:14px;box-shadow:var(--shadow-lg);
+    font-size:.78rem;font-weight:700;line-height:1.25;text-align:left;
+    display:flex;flex-direction:column;
+  }
+  .ring-badge span{font-weight:400;color:var(--ink-soft);font-size:.72rem;}
+  .ring-badge.b1{top:6%;left:-4%;}
+  .ring-badge.b2{bottom:2%;right:-6%;}
+  @media(max-width:960px){
+    .ring-badge.b1{left:0;} .ring-badge.b2{right:0;}
+  }
+  @media(max-width:500px){
+    .ring-badge{padding:7px 11px;font-size:.68rem;}
+  }
+
+  /* ===== SECTION HEADERS ===== */
+  .section-head{max-width:640px;margin-bottom:3rem;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .section-title{
+    font-family:var(--font-display);font-weight:600;
+    font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--forest);
+    letter-spacing:-.02em;line-height:1.2;margin-top:.7rem;
+  }
+  .section-title em{font-style:italic;color:var(--clay);}
+  .section-title-hi{font-family:var(--font-body);font-weight:700;color:var(--ink-soft);font-size:1.05rem;margin-top:.6rem;}
+
+  /* ===== ABOUT ===== */
+  #about{background:var(--paper);}
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.5rem;align-items:start;}
+  @media(max-width:900px){.about-grid{grid-template-columns:1fr;}}
+  .about-card{
+    background:var(--forest);color:#fff;border-radius:var(--radius);padding:2.4rem;
+    position:relative;overflow:hidden;
+  }
+  .about-card::before{
+    content:'“';position:absolute;top:-10px;right:20px;font-family:var(--font-display);
+    font-size:9rem;color:rgba(255,255,255,.06);line-height:1;
+  }
+  .about-card p{position:relative;font-size:1.02rem;color:rgba(255,255,255,.88);margin-bottom:1rem;}
+  .about-card .signature{font-family:var(--font-display);font-style:italic;font-size:1.15rem;color:var(--gold-soft);margin-top:1.4rem;}
+  .about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.2rem;}
+  .stat-box{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:1.2rem 1rem;text-align:center;}
+  .stat-box .num{font-family:var(--font-display);font-size:1.9rem;font-weight:700;color:var(--clay);}
+  .stat-box .lbl{font-size:.75rem;color:var(--ink-soft);margin-top:.3rem;letter-spacing:.02em;}
+  .about-body p{margin-bottom:1.1rem;color:var(--ink-soft);font-size:1.02rem;}
+  .about-body strong{color:var(--forest);}
+
+  /* ===== PILLARS (philosophy) ===== */
+  #pillars{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;}
+  @media(max-width:960px){.pillar-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.pillar-grid{grid-template-columns:1fr;}}
+  .pillar{
+    background:#fff;border-radius:var(--radius-sm);padding:1.8rem 1.5rem;border:1px solid var(--line);
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .pillar:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+  .pillar .no{font-family:var(--font-display);font-weight:700;font-size:.85rem;color:var(--gold);letter-spacing:.05em;}
+  .pillar h3{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:var(--forest);margin:.6rem 0 .5rem;}
+  .pillar p{font-size:.92rem;color:var(--ink-soft);}
+
+  /* ===== SPECIALITIES ===== */
+  #services{background:var(--paper);}
+  .svc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1.1rem;}
+  @media(max-width:960px){.svc-grid{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:640px){.svc-grid{grid-template-columns:repeat(2,1fr);}}
+  .svc-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+    padding:1.6rem 1.2rem;text-align:left;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s;
+  }
+  .svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--gold);}
+  .svc-icon{
+    width:44px;height:44px;border-radius:12px;background:var(--forest);
+    display:flex;align-items:center;justify-content:center;margin-bottom:1rem;
+  }
+  .svc-icon svg{width:22px;height:22px;stroke:var(--gold-soft);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;}
+  .svc-card h3{font-size:.98rem;font-weight:700;color:var(--forest);margin-bottom:.35rem;font-family:var(--font-body);}
+  .svc-card p{font-size:.84rem;color:var(--ink-soft);}
+
+  /* ===== FAQ ===== */
+  #faq{background:var(--paper-2);border-top:1px solid var(--line);}
+  .faq-list{max-width:800px;margin:0 auto;}
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%;background:none;border:none;text-align:left;padding:1.4rem 0;
+    display:flex;justify-content:space-between;align-items:center;gap:1rem;
+    font-family:var(--font-body);font-weight:700;font-size:1rem;color:var(--forest);cursor:pointer;
+  }
+  .faq-q span{font-family:var(--font-display);font-size:1.4rem;color:var(--gold);transition:transform .25s ease;flex-shrink:0;}
+  .faq-item.open .faq-q span{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease;color:var(--ink-soft);font-size:.94rem;}
+  .faq-item.open .faq-a{max-height:240px;padding-bottom:1.4rem;}
+
+  /* ===== CONTACT / BOOKING ===== */
+  #contact{background:var(--forest);color:#fff;}
+  .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr;}}
+  #contact .section-head .eyebrow{color:var(--gold-soft);}
+  #contact .section-title{color:#fff;}
+  .contact-info p{color:rgba(255,255,255,.72);margin-bottom:1.6rem;}
+  .contact-line{display:flex;align-items:center;gap:.8rem;margin-bottom:1.2rem;font-size:.95rem;}
+  .contact-line .ic{width:38px;height:38px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .contact-line .ic svg{width:18px;height:18px;stroke:var(--gold-soft);fill:none;stroke-width:1.8;}
+  .contact-line a{text-decoration:none;color:#fff;font-weight:600;}
+  .contact-socials{display:flex;gap:.7rem;margin-top:1.8rem;}
+  .social-btn{
+    width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.08);
+    display:flex;align-items:center;justify-content:center;text-decoration:none;transition:background .2s, transform .2s;
+  }
+  .social-btn svg{width:19px;height:19px;stroke:#fff;fill:none;stroke-width:1.8;}
+  .social-btn:hover{background:var(--clay);transform:translateY(-2px);}
+
+  .form-card{background:var(--paper);border-radius:var(--radius);padding:2.2rem;color:var(--ink);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem;}
+  @media(max-width:520px){.form-row{grid-template-columns:1fr;}}
+  .form-field{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1rem;}
+  .form-field label{font-size:.78rem;font-weight:700;color:var(--ink-soft);letter-spacing:.03em;}
+  .form-field input,.form-field select,.form-field textarea{
+    border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;
+    font-family:var(--font-body);font-size:.92rem;background:#fff;color:var(--ink);
+  }
+  .form-field textarea{resize:vertical;min-height:80px;}
+  .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--clay);}
+  .form-submit{width:100%;justify-content:center;margin-top:.4rem;border:none;font-size:.95rem;}
+  #formSuccess{display:none;text-align:center;padding:2rem 0;}
+  #formSuccess .num{font-size:2.4rem;}
+
+  /* ===== FOOTER ===== */
+  footer{background:#0F1E1A;color:rgba(255,255,255,.6);padding:3.5rem 0 1.5rem;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.08);}
+  @media(max-width:720px){.footer-grid{grid-template-columns:1fr;}}
+  .footer-brand{font-family:var(--font-display);font-size:1.3rem;color:#fff;font-weight:600;margin-bottom:.8rem;}
+  .footer-brand span{color:var(--gold-soft);}
+  .footer-col h4{color:#fff;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1rem;}
+  .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:.65rem;}
+  .footer-col a{text-decoration:none;color:rgba(255,255,255,.6);font-size:.9rem;transition:color .2s;}
+  .footer-col a:hover{color:var(--gold-soft);}
+  .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;padding-top:1.5rem;font-size:.8rem;}
+
+  /* ===== WHATSAPP FLOAT ===== */
+  .wa-float{
+    position:fixed;bottom:24px;right:24px;z-index:150;
+    width:58px;height:58px;border-radius:50%;background:#25D366;
+    display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);
+    text-decoration:none;transition:transform .2s ease;
+  }
+  .wa-float:hover{transform:scale(1.08);}
+  .wa-float svg{width:28px;height:28px;fill:#fff;}
+
+  /* ===== FADE IN ===== */
+  .fade-in{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease;}
+  .fade-in.visible{opacity:1;transform:translateY(0);}
+
+  /* ===== CUSTOM ADDITIONS (PHOTOS & TESTIMONIALS) ===== */
+  .ring-image-container {
+    position: absolute;
+    width: 68%;
+    height: 68%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: var(--forest-2);
+  }
+  .ring-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  @media(max-width: 1024px) {
+    .about-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about-grid .coach-image-wrapper {
+      grid-column: span 2;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+  }
+  @media(max-width: 720px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+    .about-grid .coach-image-wrapper {
+      grid-column: span 1;
+    }
+  }
+  .coach-image-wrapper {
+    position: relative;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--line);
+    aspect-ratio: 3/4;
+  }
+  .coach-main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+  }
+  .coach-badge {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(19, 36, 32, 0.85);
+    backdrop-filter: blur(8px);
+    color: var(--gold-soft);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    border: 1px solid rgba(227, 168, 59, 0.3);
+    white-space: nowrap;
+  }
+  
+  /* Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+  @media(max-width: 960px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media(max-width: 480px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .gallery-item {
+    position: relative;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    aspect-ratio: 3/4;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid var(--line);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 15%;
+  }
+
+  /* Testimonials */
+  #testimonials {
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+  }
+  .testimonials-track-container {
+    position: relative;
+    margin-top: 2.5rem;
+    padding: 0 1.5rem;
+  }
+  .testimonials-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.5rem 1.5rem;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) var(--paper-2);
+  }
+  .testimonials-track::-webkit-scrollbar {
+    height: 8px;
+  }
+  .testimonials-track::-webkit-scrollbar-track {
+    background: var(--paper-2);
+    border-radius: 4px;
+  }
+  .testimonials-track::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 4px;
+  }
+  .review-card {
+    flex: 0 0 280px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+  }
+  .review-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1213/1600;
+    object-fit: cover;
+  }
+  .zoom-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(19, 36, 32, 0.45);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+  }
+  .review-card:hover .zoom-overlay {
+    opacity: 1;
+  }
+  .zoom-overlay span {
+    background: #fff;
+    color: var(--forest);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: var(--shadow);
+  }
+  
+  /* Carousel Nav Arrows */
+  .track-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: var(--shadow);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+  }
+  .track-nav:hover {
+    background: var(--gold);
+    color: #fff;
+    transform: translateY(-50%) scale(1.05);
+  }
+  .track-nav-left {
+    left: -10px;
+  }
+  .track-nav-right {
+    right: -10px;
+  }
+
+  /* Lightbox Zoom */
+  .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 30, 26, 0.96);
+    backdrop-filter: blur(8px);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .lightbox.open {
+    display: flex;
+    opacity: 1;
+  }
+  .lightbox-content {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+  .lightbox.open .lightbox-content {
+    transform: scale(1);
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .lightbox-close:hover {
+    color: var(--gold-soft);
+  }
+</style>
+</head>
+<body>
+
+<nav id="siteNav">
+  <a href="#hero" class="nav-logo"><b>Sangeeta <span style="color:var(--gold-soft)">Kumari</span></b><small>Health &amp; Wellness Coach</small></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#pillars">Philosophy</a></li>
+    <li><a href="#services">Specialities</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta desktop-only">Book Free Call</a>
+  <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#testimonials" onclick="closeMenu()">Testimonials</a>
+  <a href="#pillars" onclick="closeMenu()">Philosophy</a>
+  <a href="#services" onclick="closeMenu()">Specialities</a>
+  <a href="#faq" onclick="closeMenu()">FAQ</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#contact" class="btn btn-primary" onclick="closeMenu()">Book Free Call</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--gold-soft)">Health &amp; Wellness Coach</span>
+      <span class="hero-title-hi">बिना भूखे रहे, बिना favourite खाना छोड़े — fit body।</span>
+      <h1 class="hero-title">Fit, without giving up the food you <em>love</em>.</h1>
+      <p class="hero-sub">4 साल के अनुभव के साथ, मैं Sangeeta Kumari, आपको घर के पौष्टिक भोजन, सही nutrition और आसान habits के ज़रिए sustainable weight loss, healthy weight gain और बेहतर lifestyle की तरफ guide करती हूँ — कोई crash diet नहीं, कोई heavy workout नहीं।</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a free consultation</a>
+        <a href="#services" class="btn btn-ghost">See specialities</a>
+      </div>
+      <div class="hero-trust">
+        <div><b>4+ yrs</b>coaching experience</div>
+        <div><b>6 KG</b>fat lost — her own journey</div>
+        <div><b>10+</b>focus areas covered</div>
+      </div>
+    </div>
+    <div class="ring-wrap fade-in visible">
+      <svg class="ring-svg" viewBox="0 0 260 260">
+        <defs>
+          <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#E3A83B"/>
+            <stop offset="100%" stop-color="#D4724A"/>
+          </linearGradient>
+        </defs>
+        <circle class="ring-track" cx="130" cy="130" r="120"/>
+        <circle class="ring-progress" cx="130" cy="130" r="120" transform="rotate(-90 130 130)"/>
+      </svg>
+      <div class="ring-image-container">
+        <img src="images/coach/coach_photo_6.jpg" alt="Coach Sangeeta Kumari">
+      </div>
+      <div class="ring-badge b1">4 Years<span>coaching experience</span></div>
+      <div class="ring-badge b2">6 KG fat lost<span>her own result</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="fade-in coach-image-wrapper">
+      <img src="images/coach/coach_photo_3.jpg" alt="Coach Sangeeta Kumari" class="coach-main-img">
+      <div class="coach-badge">Coach Sangeeta</div>
+    </div>
+    <div class="fade-in">
+      <div class="about-card">
+        <p>मैं संगीता कुमारी हूँ — एक Wellness &amp; Health Coach, जिसे इस क्षेत्र में 4 वर्षों का अनुभव है। अपनी lifestyle और nutrition में सुधार करके मैंने खुद लगभग 6 KG body fat कम किया है — इसलिए मैं जो सिखाती हूँ, वो पहले खुद जी चुकी हूँ।</p>
+        <p>मेरा उद्देश्य लोगों को सिर्फ़ fit बनाना नहीं, बल्कि उन्हें एक lifelong healthy lifestyle अपनाना सिखाना है।</p>
+        <div class="signature">— Sangeeta Kumari</div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-box"><div class="num">4+</div><div class="lbl">Years experience</div></div>
+        <div class="stat-box"><div class="num">6kg</div><div class="lbl">Her own result</div></div>
+        <div class="stat-box"><div class="num">10+</div><div class="lbl">Areas guided</div></div>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="section-head">
+        <span class="eyebrow">About the coach</span>
+        <h2 class="section-title">Guidance that comes from <em>lived</em> experience</h2>
+      </div>
+      <div class="about-body">
+        <p>Sangeeta helps people work toward <strong>weight loss</strong>, <strong>healthy weight gain</strong> and an overall better lifestyle — without extreme rules. Her approach centres on <strong>ghar ka poshtik bhojan</strong> (home-cooked, nutritious food), correct nutrition, stress management, and small habits that are easy to actually keep up.</p>
+        <p>The core belief is simple: sustainable health results come from real food and real habits — not from starving, not from giving up the meals you love, and not from punishing workouts. It's about building a body that stays fit for life, not just for a season.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COACH GALLERY -->
+<section id="coach-gallery" style="background:var(--paper); padding-top:0; padding-bottom:4rem;">
+  <div class="container">
+    <div class="section-head center fade-in">
+      <span class="eyebrow">Coach Gallery</span>
+      <h2 class="section-title">Daily Inspiration &amp; <em>Lifestyle</em></h2>
+      <p class="section-title-hi">संगीता की फिटनेस यात्रा और हेल्दी लाइफस्टाइल की कुछ झलकियां</p>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item" onclick="openLightbox('images/coach/coach_photo_1.jpg')">
+        <img src="images/coach/coach_photo_1.jpg" alt="Coach Sangeeta 1">
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/coach/coach_photo_2.jpg')">
+        <img src="images/coach/coach_photo_2.jpg" alt="Coach Sangeeta 2">
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/coach/coach_photo_4.jpg')">
+        <img src="images/coach/coach_photo_4.jpg" alt="Coach Sangeeta 4">
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/coach/coach_photo_5.jpg')">
+        <img src="images/coach/coach_photo_5.jpg" alt="Coach Sangeeta 5">
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/coach/coach_photo_7.jpg')">
+        <img src="images/coach/coach_photo_7.jpg" alt="Coach Sangeeta 7">
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/coach/coach_photo_8.jpg')">
+        <img src="images/coach/coach_photo_8.jpg" alt="Coach Sangeeta 8">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section id="pillars">
+  <div class="container">
+    <div class="section-head center fade-in">
+      <span class="eyebrow">The approach</span>
+      <h2 class="section-title">Fit and healthy — <em>her way</em></h2>
+      <p class="section-title-hi">बिना भूखे रहे। बिना favourite food छोड़े। बिना heavy workouts के।</p>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar fade-in">
+        <div class="no">No.1</div>
+        <h3>Eat real, full meals</h3>
+        <p>No starving, no skipping meals — plans are built around eating enough of the right things.</p>
+      </div>
+      <div class="pillar fade-in">
+        <div class="no">No.2</div>
+        <h3>Keep your favourite foods</h3>
+        <p>No extreme restriction. Your food preferences are worked into the plan, not eliminated from it.</p>
+      </div>
+      <div class="pillar fade-in">
+        <div class="no">No.3</div>
+        <h3>No heavy workouts needed</h3>
+        <p>Simple, doable movement and habits — fitness that fits into a real, busy life.</p>
+      </div>
+      <div class="pillar fade-in">
+        <div class="no">No.4</div>
+        <h3>Home food, done right</h3>
+        <p>Ghar ka khana with correct nutrition and portioning, plus stress management for lasting results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALITIES -->
+<section id="services">
+  <div class="container">
+    <div class="section-head center fade-in">
+      <span class="eyebrow">Specialities</span>
+      <h2 class="section-title">Guidance across <em>10 focus areas</em></h2>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head center fade-in">
+      <span class="eyebrow">Reviews</span>
+      <h2 class="section-title">Client <em>Testimonials</em></h2>
+      <p class="section-title-hi">WhatsApp Chat Screenshots showing real progress and positive feedback from clients</p>
+    </div>
+    
+    <div class="testimonials-track-container fade-in">
+      <button class="track-nav track-nav-left" onclick="scrollTrack(-1)" aria-label="Scroll left">&#10094;</button>
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="review-card" onclick="openLightbox('images/reviews/review_1.jpg')">
+          <img src="images/reviews/review_1.jpg" alt="Client Review 1">
+          <div class="zoom-overlay"><span>🔍 View Progress</span></div>
+        </div>
+        <div class="review-card" onclick="openLightbox('images/reviews/review_2.jpg')">
+          <img src="images/reviews/review_2.jpg" alt="Client Review 2">
+          <div class="zoom-overlay"><span>🔍 View Progress</span></div>
+        </div>
+        <div class="review-card" onclick="openLightbox('images/reviews/review_3.jpg')">
+          <img src="images/reviews/review_3.jpg" alt="Client Review 3">
+          <div class="zoom-overlay"><span>🔍 View Progress</span></div>
+        </div>
+        <div class="review-card" onclick="openLightbox('images/reviews/review_4.jpg')">
+          <img src="images/reviews/review_4.jpg" alt="Client Review 4">
+          <div class="zoom-overlay"><span>🔍 View Progress</span></div>
+        </div>
+        <div class="review-card" onclick="openLightbox('images/reviews/review_5.jpg')">
+          <img src="images/reviews/review_5.jpg" alt="Client Review 5">
+          <div class="zoom-overlay"><span>🔍 View Progress</span></div>
+        </div>
+        <div class="review-card" onclick="openLightbox('images/reviews/review_6.jpg')">
+          <img src="images/reviews/review_6.jpg" alt="Client Review 6">
+          <div class="zoom-overlay"><span>🔍 View Progress</span></div>
+        </div>
+        <div class="review-card" onclick="openLightbox('images/reviews/review_7.jpg')">
+          <img src="images/reviews/review_7.jpg" alt="Client Review 7">
+          <div class="zoom-overlay"><span>🔍 View Progress</span></div>
+        </div>
+      </div>
+      <button class="track-nav track-nav-right" onclick="scrollTrack(1)" aria-label="Scroll right">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head center fade-in">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="section-title">Common <em>questions</em></h2>
+    </div>
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Kya diet plan mein bhookha rehna padega? <span>+</span></button>
+        <div class="faq-a">Nahi. Plans real, satisfying home meals ke around banaye jaate hain — bhookha rehna approach ka hissa nahi hai.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Kya mujhe apna favourite khana chhodna hoga? <span>+</span></button>
+        <div class="faq-a">Nahi. Sangeeta ka approach aapke food preferences ko plan mein shaamil karta hai, unhe khatam nahi karta.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Kya heavy gym workouts zaroori hain? <span>+</span></button>
+        <div class="faq-a">Nahi. Focus simple, sustainable habits aur lifestyle changes par hai — heavy workouts par nahi.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Weight loss ke alawa aur kis cheez mein guidance milti hai? <span>+</span></button>
+        <div class="faq-a">Weight loss, muscle gain, skin care, bone &amp; joint health, digestive health, sports nutrition, men's health, women's health, child nutrition aur heart health — total 10 focus areas.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Results kitne sustainable hote hain? <span>+</span></button>
+        <div class="faq-a">Poora focus lifelong healthy lifestyle par hai, na ki sirf ek quick fix par — isiliye habits aisi rakhi jaati hain jo lambe samay tak chal sakein.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">Consultation kaise book karein? <span>+</span></button>
+        <div class="faq-a">Neeche diye form ko bharein ya seedha WhatsApp par message karein — Sangeeta aapse jald hi contact karengi.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container contact-grid">
+    <div class="fade-in">
+      <div class="section-head">
+        <span class="eyebrow">Get in touch</span>
+        <h2 class="section-title">Let's start your <em>journey</em></h2>
+      </div>
+      <p style="color:rgba(255,255,255,.72);margin-bottom:1.6rem;max-width:40ch;">Apna free consultation book karein aur apni health goals ke baare mein Sangeeta se seedha baat karein.</p>
+
+      <div class="contact-line">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <a href="tel:+917992219509">+91 79922 19509</a>
+      </div>
+      <div class="contact-line">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg></div>
+        <a href="mailto:godblessuanu@gmail.com">godblessuanu@gmail.com</a>
+      </div>
+      <div class="contact-socials">
+        <a href="https://www.instagram.com/sangeetaparikshit?igsh=MWFwbWl3czR5dTBscQ==" target="_blank" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1HmyzWQizC/" target="_blank" class="social-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/917992219509" target="_blank" class="social-btn" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <div class="form-card">
+        <form id="consultForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">Name</label>
+              <input type="text" id="fname" placeholder="Your name" required>
+            </div>
+            <div class="form-field">
+              <label for="fphone">Phone</label>
+              <input type="tel" id="fphone" placeholder="10-digit number" required>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" placeholder="you@email.com">
+          </div>
+          <div class="form-field">
+            <label for="fgoal">Main goal</label>
+            <select id="fgoal">
+              <option>Weight Loss</option>
+              <option>Healthy Weight Gain</option>
+              <option>Muscle Gain</option>
+              <option>Skin Care</option>
+              <option>Bone &amp; Joint Health</option>
+              <option>Digestive Health</option>
+              <option>Sports Nutrition</option>
+              <option>Men's Health</option>
+              <option>Women's Health</option>
+              <option>Child Nutrition</option>
+              <option>Heart Health</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="fmsg">Tell us a bit more</label>
+            <textarea id="fmsg" placeholder="Your current routine, goals, or any questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send via WhatsApp</button>
+        </form>
+        <div id="formSuccess">
+          <div class="num">✅</div>
+          <p style="color:var(--ink-soft);margin-top:.5rem;">Thanks! WhatsApp खुल गया है — अपना message भेज दीजिए, Sangeeta जल्द जवाब देंगी।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Sangeeta <span>Kumari</span></div>
+        <p style="max-width:36ch;font-size:.9rem;">Health &amp; Wellness Coach — sustainable weight loss, healthy weight gain and lifestyle guidance built around home food and simple habits.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pillars">Philosophy</a></li>
+          <li><a href="#services">Specialities</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach out</h4>
+        <ul>
+          <li><a href="tel:+917992219509">+91 79922 19509</a></li>
+          <li><a href="mailto:godblessuanu@gmail.com">godblessuanu@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/sangeetaparikshit?igsh=MWFwbWl3czR5dTBscQ==" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/share/1HmyzWQizC/" target="_blank">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Sangeeta Kumari — Health &amp; Wellness Coach.</div>
+      <div>Made with care for a healthier lifestyle.</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/917992219509" target="_blank" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.5 3.62 1.36 5.13L2 22l5.11-1.44a9.9 9.9 0 0 0 4.93 1.31h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.03h-.01a8.1 8.1 0 0 1-4.14-1.14l-.3-.18-3.03.86.81-2.95-.2-.31a8.13 8.13 0 0 1-1.24-4.4c0-4.5 3.66-8.16 8.17-8.16 2.18 0 4.23.85 5.77 2.4a8.1 8.1 0 0 1 2.39 5.77c0 4.5-3.66 8.11-8.22 8.11zm4.48-6.11c-.24-.12-1.45-.71-1.68-.8-.22-.08-.39-.12-.55.12-.16.24-.63.8-.78.96-.14.16-.28.18-.53.06-.24-.12-1.03-.38-1.96-1.21a7.3 7.3 0 0 1-1.35-1.68c-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.13 3.64.58.25 1.03.4 1.38.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.11-.22-.17-.46-.29z"/></svg>
+</a>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightboxImg" alt="Review Zoomed">
+</div>
+
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('siteNav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Mobile menu
+  function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+  function closeMenu(){ document.getElementById('mobileMenu').classList.remove('open'); }
+
+  // FAQ accordion
+  function toggleFaq(btn){
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if(!isOpen) item.classList.add('open');
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Form -> WhatsApp
+  function handleSubmit(e){
+    e.preventDefault();
+    const name = document.getElementById('fname').value;
+    const phone = document.getElementById('fphone').value;
+    const email = document.getElementById('femail').value;
+    const goal = document.getElementById('fgoal').value;
+    const msg = document.getElementById('fmsg').value;
+    const text = `Hello Sangeeta,%0A%0AMujhe free consultation book karni hai.%0A%0A*Details:*%0A- Name: ${name}%0A- Phone: ${phone}%0A- Email: ${email}%0A- Goal: ${goal}%0A- Message: ${msg}`;
+    window.open(`https://wa.me/917992219509?text=${text}`, '_blank');
+    document.getElementById('consultForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+
+  // Specialities data + icons
+  const svcIcon = {
+    weight: '<path d="M12 3v3M8 6h8l2 14H6L8 6Z"/><circle cx="12" cy="12" r="2.2"/>',
+    muscle: '<path d="M6 14c0-3 2-5 3-6l1 2 4-2 1 2c1 1 3 3 3 6-1 1-3 2-6 2s-5-1-6-2Z"/><path d="M4 12l2 2M20 12l-2 2"/>',
+    skin: '<path d="M12 3c4 3 7 6.5 7 10.5A7 7 0 0 1 5 13.5C5 9.5 8 6 12 3Z"/>',
+    bone: '<path d="M6 10a2 2 0 1 1 3-3l6 6a2 2 0 1 1-3 3Z"/><circle cx="6.3" cy="6.3" r="1.4"/><circle cx="17.7" cy="17.7" r="1.4"/>',
+    digest: '<path d="M9 3c0 2-2 3-2 6 0 4 3 4 3 8a4 4 0 0 1-4 4"/><path d="M15 3c0 3 3 4 3 8 0 3-2 4-2 6"/>',
+    sports: '<circle cx="12" cy="5" r="2"/><path d="M12 7v5l-4 3M12 12l4 3M8 15l-2 5M16 15l2 5"/>',
+    men: '<circle cx="10" cy="14" r="5"/><path d="M14 10l6-6M14 4h6v6"/>',
+    women: '<circle cx="12" cy="9" r="5"/><path d="M12 14v7M9 18h6"/>',
+    child: '<circle cx="12" cy="7" r="3"/><path d="M6 21c0-4 3-6 6-6s6 2 6 6"/>',
+    heart: '<path d="M12 21s-7-4.5-9.5-9C1 8.5 2.5 5 6 5c2 0 3.5 1.2 4 2.5C10.5 6.2 12 5 14 5c3.5 0 5 3.5 3.5 7-2.5 4.5-9.5 9-9.5 9Z"/>'
+  };
+  const services = [
+    ['weight','Weight Loss','A sustainable, food-first path to a healthier weight.'],
+    ['muscle',"Muscle Gain",'Building strength with proper nutrition, not shortcuts.'],
+    ['skin',"Skin Care",'Nutrition-led guidance for healthier looking skin.'],
+    ['bone',"Bone & Joint Health",'Habits that support stronger bones and joints.'],
+    ['digest',"Digestive Health",'Better gut health through the right everyday foods.'],
+    ['sports',"Sports Nutrition",'Fuelling training and recovery the right way.'],
+    ['men',"Men's Health",'Focused nutrition and lifestyle guidance for men.'],
+    ['women',"Women's Health",'Wellness guidance tailored to women\'s needs.'],
+    ['child',"Child Nutrition",'Simple, healthy nutrition habits for growing kids.'],
+    ['heart',"Heart Health",'Everyday habits that support a healthier heart.']
+  ];
+  const grid = document.getElementById('svcGrid');
+  services.forEach(([key,title,desc]) => {
+    const el = document.createElement('div');
+    el.className = 'svc-card fade-in';
+    el.innerHTML = `<div class="svc-icon"><svg viewBox="0 0 24 24">${svcIcon[key]}</svg></div><h3>${title}</h3><p>${desc}</p>`;
+    grid.appendChild(el);
+  });
+  document.querySelectorAll('#svcGrid .fade-in').forEach(el => observer.observe(el));
+
+  // Carousel scroll
+  function scrollTrack(dir) {
+    const track = document.getElementById('testimonialsTrack');
+    const scrollAmount = 300 * dir;
+    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  }
+
+  // Lightbox Zoom
+  function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightboxImg');
+    img.src = src;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+</script>
+
+</body>
+</html>
